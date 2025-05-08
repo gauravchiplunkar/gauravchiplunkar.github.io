@@ -1,42 +1,334 @@
+/* Note the line height and letter spacing*/
 
 body {
-    font-family: "Georgia", serif;
-    max-width: 750px;
-    margin: 60px auto;
-    padding: 0 20px;
-    line-height: 1.6;
-    color: #333;
-    background-color: #fff;
+  font-family: 'System UI', sans-serif;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 30px;
+  color: #333;
+  background-color: #ffffff;
+  line-height: 1.6;
+  letter-spacing: 0px;
 }
 
-h1, h2, h3 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #111;
+/* these are the section headings */
+h1 {
+  font-weight: 600;
+  color: #1a1a1a;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  margin-top: 50px;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 10px;
 }
 
+/* these are the section headings at the top */
+h2 {
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-top: 50px;
+  font-size: 1.3em;
+  border-bottom: 1px solid #80808080;
+  padding-bottom: 10px;
+}
+
+
+/* these are the section headings with other things already above it*/
+h3 {
+  font-weight: 600;
+  color: #1a1a1a;
+  font-size: 1.3em;
+  margin-top: 80px;
+  border-bottom: 1px solid #80808080;
+  padding-bottom: 10px;
+}
+
+
+/* navigation buttons at the top*/
 nav {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
+  font-size: 1.2em;
 }
 
 nav a {
-    margin-right: 15px;
-    text-decoration: none;
-    color: #0645ad;
+  margin-right: 15px;
+  text-decoration: none;
+  color: #0645ad;
 }
 
 nav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-ul {
-    padding-left: 20px;
+
+
+/* sub-navigation buttons at the top*/
+.sub-nav {
+  margin-bottom: 30px;
+  display: flex;
+  gap: 20px;
 }
 
-a {
-    color: #0645ad;
-    text-decoration: none;
+.sub-nav a {
+  padding: 4px 8px;
+  background-color: #f0f0f0;
+  border: 0px solid #ccc;
+  text-decoration: none;
+  font-weight: 600;
+  color: #333;
+  border-radius: 2px;
+  transition: background-color 0.2s;
 }
 
-a:hover {
-    text-decoration: underline;
+.sub-nav a:hover {
+  box-shadow: 0 3px 9px rgba(0,0,0,1);
+}
+
+
+
+
+/* Section grid: make the size of the box autofill
+Note: 400px is the minimum size of 1 box. you can change
+it depending onthe max-width you set up in the "body" 
+
+An alternate way of designing this
+.section-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  align-items: start;
+  justify-content: space-between;
+}
+
+*/
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 25px;
+}
+
+
+/* Paper box details */
+.paper-box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;             /* ensures it stretches in the grid */
+  box-sizing: border-box;
+  background-color: #f8f9fa;
+  border: 0.1px solid #e0e0e0;
+  border-radius: 0px;
+  padding: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+/* when you hover mouse over box, it lights up! */
+.paper-box:hover {
+  box-shadow: 0 3px 9px rgba(0,0,0,1);
+}
+
+/* Name of the Paper */
+.paper-box strong {
+  font-size: 1em;
+  color: #1a1a1a;
+}
+
+/* journal name */
+.paper-box .journal {
+  margin-top: 10px;
+  font-size: 0.9em;
+  font-weight: 550;
+  color: #8B0000;
+}
+
+/* co-author names */
+.paper-box .authors {
+  font-size: 0.85em;
+  color: #555;
+}
+
+/* media coverage */
+.paper-box .media {
+  margin-top: 10px; /* Adds space between paper links and media block */
+}
+.paper-box .media::before {
+  content: "Coverage:";
+  font-size: 0.85em;
+  font-weight: bold;
+}
+
+.paper-box .media a {
+  font-size: 0.85em;
+  color: #00008B;
+  text-decoration: none;
+}
+.media a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* links on the box */
+.paper-box .paper a {
+  margin-right: 10px;
+  margin-top: 10px;
+  font-weight: 575;
+  font-size: 0.9em;
+  color: #0005B;
+  text-decoration: none;
+}
+
+.paper a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* format for the abstract text */
+.abstract-text {
+  display: none;
+  font-size: 0.8em;
+  margin-top: 20px;
+  color: #333;
+}
+
+
+
+
+/* Footer with copyright */
+.footer {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #000000;
+  font-size: 1em;
+  text-align: center;
+  color: #000000;
+}
+
+
+
+
+.url-link {
+  color: #00009B; /* softer gray or muted blue */
+  font-weight: 550;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+----------------------------
+Header 
+----------------------------
+*/
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0a2f5c;
+  padding: 10px 25px;
+  color: white;
+}
+
+.top-bar h1 {
+  margin: 10px;
+  color: white;
+  font-size: 1.8em;
+  border-bottom: none;
+}
+
+.top-bar nav  {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.top-bar nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.top-bar nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main content grid */
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+}
+/*
+.profile-grid {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+}
+*/
+
+.left-col {
+  flex: 0 0 200px;
+  text-align: center;
+}
+
+.left-col .profile-img {
+  width: 60%;
+  border-radius: 8px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.left-col .icons a {
+  font-size: 2em;
+  margin: 0 30px;
+  color: #0645ad;
+}
+
+.right-col {
+  margin-top: 50px;
+  margin-left: -30px;
+  flex: 1;
+  font-size: 1em;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.email-link {
+  color: #8B0000; /* softer gray or muted blue */
+  font-weight: 550;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  color: #0645ad; /* or any hover color you like */
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+/* Optional announcement banner */
+.highlight-link {
+  color: #8B0000; /* softer gray or muted blue */
+  font-weight: 550;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  color: #0645ad; /* or any hover color you like */
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.highlight-box {
+  background-color: #f1f1f1;
+  padding: 15px 25px;
+  margin: 30px auto;
+  max-width: 900px;
+  border-left: 5px solid #0645ad;
 }
