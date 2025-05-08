@@ -344,3 +344,89 @@ Header
   max-width: 900px;
   border-left: 5px solid #0645ad;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------
+Responsive Design for Mobile
+---------------------------- */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0 20px;
+    margin: 20px auto;
+    font-size: 0.95em;
+  }
+
+  h1 {
+    font-size: 1.4em;
+  }
+
+  h2 {
+    font-size: 1.1em;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  .section-grid {
+    grid-template-columns: 1fr; /* Stack boxes vertically */
+    gap: 20px;
+  }
+
+  .paper-box {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .profile-grid {
+    grid-template-columns: 1fr; /* Stack left and right column vertically */
+    gap: 30px;
+  }
+
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .top-bar h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  .top-bar nav {
+    margin-top: 10px;
+    font-size: 1em;
+  }
+
+  .left-col,
+  .right-col {
+    margin: 0;
+    width: 100%;
+    text-align: left;
+  }
+
+  .left-col .profile-img {
+    width: 80%;
+    margin: 0 auto 15px auto;
+  }
+
+  .left-col .icons a {
+    margin: 0 15px;
+  }
+
+  .highlight-box {
+    margin: 20px auto;
+    padding: 12px 15px;
+    font-size: 0.95em;
+  }
+}
