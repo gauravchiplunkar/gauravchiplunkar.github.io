@@ -1,5 +1,17 @@
 /* Note the line height and letter spacing*/
 
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #0005B;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 body {
   font-family: 'System UI', sans-serif;
   max-width: 900px;
