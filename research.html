@@ -1,21 +1,334 @@
+<!-- RESEARCH PAGE -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Research - Gaurav Chiplunkar</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Research - Gaurav Chiplunkar</title>
+  <link rel="stylesheet" href="style.css">
+
+<script>
+  function toggleAbstract(id) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    if (el.style.display === "none" || el.style.display === "") {
+      el.style.display = "block";
+    } else {
+      el.style.display = "none";
+    }
+  }
+</script>
+
+<!-- HEAD -->
 </head>
 <body>
-    <h1>Research</h1>
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="research.html">Research</a>
-    </nav>
-    <ul>
-        <li><strong>Aggregate Implications of Barriers to Female Entrepreneurship</strong> (with Pinelopi Goldberg) - <em>Econometrica</em>, 2024. <a href="#">[PDF]</a></li>
-        <li><strong>Gender Barriers, Structural Transformation, and Economic Development</strong> (with Tatjana Kleineberg). <a href="#">[PDF]</a></li>
-        <li><strong>The Employment Effects of Mobile Internet in Developing Countries</strong> (with Pinelopi Goldberg). <a href="#">[PDF]</a></li>
-        <li><strong>How Important Are Matching Frictions in the Labor Market?</strong> (with Abhijit Banerjee) - <em>Journal of Development Economics</em>, 2024. <a href="#">[PDF]</a></li>
-    </ul>
+  <h1>Research</h1>
+  <nav>
+    <a href="home.html">Home</a>|
+    <a href="resume/Chiplunkar_CV_2025_05.pdf" target="_blank" rel="noopener noreferrer" >CV</a>|
+    <a href="research.html">Research</a>|
+    <a href="teaching.html">Teaching</a>|
+    <a href="media.html">Media Writings</a>
+  </nav>
+
+<div class="sub-nav">
+  <a href="#publications">Published Papers</a> 
+  <a href="#working-papers">Working Papers</a>
+</div>
+
+
+
+
+
+<!-- 
+---------------------------------------
+PUBLICATIONS 
+---------------------------------------
+-->
+  <h2 id = "publications">Published Papers</h2> 
+  <div class="section-grid">
+
+
+<!-- PAPER: CHIPLUNKAR, CHAUREY, SOUNDARARAJAN, JPE MICRO -->
+  <div class="paper-box">
+    <div><strong>Employment protection legislation and informality: Theory and evidence from India</strong></div>
+    <div class="journal">Accepted, JPE Microeconomics, 2025</div>
+    <div class="authors"> with Ritam Chaurey and Vidhya Soundararajan </div> 
+
+    <div class="paper">
+      <a href="#" onclick="event.preventDefault(); toggleAbstract('abs6')">abstract</a>
+      <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4204033"
+      target="_blank" rel="noopener noreferrer">paper</a>
+    </div>
+
+    <div class="abstract-text" id="abs6">
+    We show that employment protection laws (EPL) that penalize formal firms for hiring workers on contract can have unintended consequences in economies with high informality. While such EPL reduce informality on the "intensive margin"—by discouraging contract employment within formal firms—it increases informality on the "extensive margin", as some firms exit the formal sector entirely. This raises overall informality and leads to declines in aggregate productivity, wages, and welfare. 
+    </div>
+  </div>
+
+
+
+
+
+
+
+<!-- PAPER: CHIPLUNKAR, CHEN, SEKHRI, JDE -->
+  <div class="paper-box">
+    <div><strong>How do political connections of firms matter during an economic crisis?</strong></div>
+    <div class="journal">Journal of Development Econonomics, 2025</div>
+    <div class="authors"> with Yutong Chen, Sheetal Sekhri, Anirban Sen, and Aaditeshwar Seth </div> 
+
+    <div class="paper">
+      <a href="#" onclick="event.preventDefault(); toggleAbstract('abs5')">abstract</a>
+      <a href="papers/2025_ccsss_jde.pdf" target="_blank">paper</a>
+      <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5161767" target="_blank">online appendix</a>
+    </div>
+    
+    <div class="abstract-text" id="abs5">
+    We show that employment protection laws (EPL) that penalize formal firms for hiring workers on contract can have unintended consequences in economies with high informality. While such EPL reduce informality on the "intensive margin"—by discouraging contract employment within formal firms—it increases informality on the "extensive margin", as some firms exit the formal sector entirely. This raises overall informality and leads to declines in aggregate productivity, wages, and welfare. 
+    </div>
+    
+    <div class="media">
+      <a href="https://voxdev.org/topic/institutions-political-economy/how-political-connections-shield-firms-during-economic-crisis" target="_blank">Vox Dev </a>
+    </div>
+  </div>
+
+
+
+
+<!-- PAPER: CHIPLUNKAR, GOLDBERG, ECMA -->
+  <div class="paper-box">
+    <div><strong>Aggregate implications of barriers to female entrepreneurship?</strong></div>
+    <div class="journal">Econometrica, 2024</div>
+    <div class="authors"> with Pinelopi K. Goldberg </div> 
+
+    <div class="paper">
+      <a href="#" onclick="event.preventDefault(); toggleAbstract('abs4')">abstract</a>
+      <a href="papers/2024_cg_femaleentrepreneurs_ecma.pdf" target="_blank">paper</a>
+      <a href="2024_cg_ecma_onlineappendix" target="_blank">online appendix</a>
+    </div>
+    
+    <div class="abstract-text" id="abs4">
+  We develop a framework to measure barriers to women’s labor force participation and entrepreneurship in India. We find that while women face high costs in growing firms as opposed to starting them, they are more successful in hiring other women—a pattern not explained by sectoral sorting. Removing these barriers would significantly boost female LFP, earnings, and aggregate productivity through reallocation from less productive male-owned firms to more productive female-owned firms. 
+    </div>
+    
+    <div class="media">
+      <a href="https://www.worldbank.org/en/publication/wdr2024" target="_blank">World Development Report 2024 (World Bank), </a>
+      <a href="https://www.bbc.com/news/articles/c4g0g5005ggo" target="_blank">BBC, </a>
+      <a href="https://voxdev.org/topic/firms/unlocking-economic-potential-female-entrepreneurship" target="_blank">Vox Dev, </a>
+      <a href="https://www.cgdev.org/blog/economics-marginalia-april-23-2021" target="_blank">Centre for Global Development (CGD), </a>
+      <a href="https://ideas.darden.virginia.edu/barriers-faced-by-female-entrepreneurs" target="_blank">Ideas to Action, </a>
+      <a href="https://we-fi.org/research-on-india-suggests-women-are-a-key-to-fast-economic-growth/" target="_blank">Women Entrepreneurs Finance Initiative, </a>
+      <a href="https://cepr.org/voxeu/columns/aggregate-implications-barriers-female-entrepreneurship" target="_blank">Vox EU, </a>
+      <a href="https://womenandwork.substack.com/p/october-2024" target="_blank">CEDA (Ashoka University), </a>
+      <a href="https://egc.yale.edu/research/empowering-women-entrepreneurs-can-have-multiplier-effect-indias-economy" target="_blank">Yale Economic Growth Center, </a>
+      <a href="https://www.nber.org/be-20221/reducing-gender-bias-india-would-boost-entrepreneurship" target="_blank">NBER Bulletin on Entrepreneurship, </a>
+      <a href="https://www.imf.org/en/Publications/Policy-Papers/Issues/2022/07/28/IMF-Strategy-Toward-Mainstreaming-Gender-521344" target="_blank">IMF Strategy Towards Mainstreaming Gender </a>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- PAPER: BANERJEE AND CHIPLUNKAR, JDE -->
+  <div class="paper-box">
+    <div><strong>How important are matching frictions in the labor market? Experimental & non-experimental evidence from a large Indian firm</strong></div>
+    <div class="journal">Journal of Development Economics, 2024</div>
+    <div class="authors"> with Abhijit V. Banerjee </div> 
+
+    <div class="paper">
+      <a href="#" onclick="event.preventDefault(); toggleAbstract('abs3')">abstract</a>
+      <a href="papers/2024_banerjee_chiplunkar_jde.pdf" target="_blank">paper</a>
+    </div>
+    
+    <div class="abstract-text" id="abs3">
+    We document the presence of matching frictions in the Indian labor market. Job-seekers have widely varying preferences over the same jobs, yet placement officers lack accurate knowledge of these preferences. Providing officers with this information improves short-term matching outcomes, though the effects fade by six months.    </div>
+    
+    <div class="media">
+      <a href="https://www.youtube.com/watch?v=walizWKUg7U&ab_channel=PEDLCEPR" target="_blank">PEDL CEPR interview </a>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- PAPER: WEAVER AND CHIPLUNKAR, JDE -->
+  <div class="paper-box">
+    <div><strong>Marriage markets and the rise of dowry in India</strong></div>
+    <div class="journal">Journal of Development Economics, 2023</div>
+    <div class="authors"> with Jeff Weaver </div> 
+
+    <div class="paper">
+      <a href="#" onclick="event.preventDefault(); toggleAbstract('abs2')">abstract</a>
+      <a href="papers/2023_chiplunkar_weaver_jde.pdf" target="_blank">paper</a>
+      <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4419201" target="_blank">online appendix</a>
+    </div>
+    
+    <div class="abstract-text" id="abs2">
+    Some stylized facts and theories about dowries in India, using data on 74,000 marriages between 1930-2000.
+    </div>
+    
+    <div class="media">
+      <a href="https://blogs.worldbank.org/en/developmenttalk/evolution-dowry-rural-india-1960-2008" target="_blank">World Bank, </a>
+      <a href="https://www.bbc.com/news/world-asia-india-65682796" target="_blank">BBC, </a>
+      <a href="https://www.livemint.com/Consumer/isJs5Q82rojo2gXnFSzSdM/Do-more-educated-grooms-get-higher-dowry.html" target="_blank">Live Mint, </a>
+      <a href="https://www.ideasforindia.in/topics/social-identity/prevalence-and-evolution-of-dowry-in-india.html" target="_blank">Ideas for India, </a>
+      <a href="https://globaldev.blog/dowry-india-evolution-prevalence-and-policy-responses/" target="_blank">Global Dev, </a>
+      <a href="https://ideas.darden.virginia.edu/education-and-the-future-of-dowries-in-india" target="_blank">Ideas to Action, </a>
+      <a href="https://www.youtube.com/watch?v=gZWySUIctJI&ab_channel=MohakMangal" target="_blank">Soch by Mohak Mangal (YouTube) </a>
+    </div>
+  </div>
+
+
+
+
+<!-- PAPER: CHIPLUNKAR AND DAS, JEBO -->
+  <div class="paper-box">
+    <div><strong>Political institutions and policy responses during a crisis</strong></div>
+    <div class="journal">Journal of Economic Behavior and Organization, 2021</div>
+    <div class="authors"> with Sabyasachi Das </div> 
+
+    <div class="paper">
+      <a href="#" onclick="event.preventDefault(); toggleAbstract('abs1')">abstract</a>
+      <a href="papers/2021_chiplunkar_das_jebo.pdf" target="_blank">paper</a>
+    </div>
+    
+    <div class="abstract-text" id="abs1">
+    We study how political institutions shape government responses to national crises, focusing on COVID-19 policy actions across 125 countries. We find that non-democracies implement stricter measures earlier, but democracies soon match or surpass them—especially in health-related policies. Democracies with greater electoral strength and longer time to the next election respond more aggressively. Media freedom slows containment, but enhances health interventions.
+    </div>
+    </div>
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+<!-- 
+---------------------------------------
+WORKING PAPERS 
+---------------------------------------
+-->
+  <h3 id = "working-papers">Working Papers</h2> 
+  <div class="section-grid">
+
+
+
+<!-- PAPER: CHIPLUNKAR KLEINEBERG -->
+  <div class="paper-box">
+    <div><strong>Gender barriers, structural transformation, and economic development</strong></div>
+    <div class="authors"> with Tatjana Kleineberg, 2024 </div> 
+
+    <div class="paper">
+      <a href="#" onclick="event.preventDefault(); toggleAbstract('wp4')">abstract</a>
+      <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5026505" target="_blank">paper</a>
+    </div>
+    
+    <div class="abstract-text" id="wp4">
+   Using nationally representative data from over 90 countries, we document distinct gender patterns in employment transitions across both sectors and occupations during over the last five decades. 
+    </div>
+    </div>
+  
+
+
+<!-- PAPER: CHIPLUNKAR KELLEY LANE -->
+  <div class="paper-box">
+    <div><strong>Competitive job seekers: When sharing less leaves firms at a loss</strong></div>
+    <div class="authors"> with Erin Kelley and Greg Lane, 2024 </div> 
+
+    <div class="paper">
+      <a href="#" onclick="event.preventDefault(); toggleAbstract('wp3')">abstract</a>
+      <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4742922" target="_blank">paper</a>
+      <a href="https://www.nber.org/papers/w32171" target="_blank">nber</a>
+      <a href="https://docs.iza.org/dp16840.pdf" target="_blank">iza</a>
+    </div>
+    
+    <div class="abstract-text" id="wp3">
+   When competition for a job increases, individuals are less likely to share information—especially with high-ability peers—leading to lower-quality applicants and hires. Firms relying on social networks to recruit may therefore attract weaker candidates for competitive roles. While higher wages improve applicant quality, they don’t fully offset the disincentives to share information.
+    </div>
+
+    <div class="media">
+      <a href="https://bfi.uchicago.edu/insight/research-summary/competitive-job-seekers-when-sharing-less-leaves-firms-at-a-loss/" target="_blank">Chicago BFI Research Insights, </a>
+      <a href="https://www.ideasforindia.in/topics/human-development/competitive-jobseekers-when-sharing-less-leaves-firms-at-a-loss.html" target="_blank">Ideas for India </a>
+    </div>
+
+    </div>
+
+
+
+
+<!-- PAPER: CHIPLUNKAR DHAR  -->
+  <div class="paper-box">
+    <div><strong>Not too little, but too late: Improving post-primary learning outcomes in India</strong></div>
+    <div class="authors"> with Diva Dhar, 2023 </div> 
+
+    <div class="journal">Under Revision for Economic Development & Cultural Change</div>
+    <div class="paper">
+      <a href="#" onclick="event.preventDefault(); toggleAbstract('wp2')">abstract</a>
+      <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3932347" target="_blank">paper</a>
+    </div>
+    
+    <div class="abstract-text" id="wp2">
+   We evaluate a remedial education program for post-primary students in India and find that while it significantly improved foundational skills, it did not boost performance on high-stakes, grade-level exams. Ruling out alternative explanations, we argue that such interventions may not be ‘too little,’ but rather ‘too late’ to affect outcomes that shape students’ academic and professional futures.
+    </div>
+    </div>
+
+
+
+<!-- PAPER: CHIPLUNKAR GOLDBERG: 3G INTERNET  -->
+  <div class="paper-box">
+    <div><strong>Employment effects of mobile internet in developing countries</strong></div>
+    <div class="authors"> with Pinelopi K. Goldberg, 2022 </div> 
+
+    <div class="paper">
+      <a href="#" onclick="event.preventDefault(); toggleAbstract('wp1')">abstract</a>
+      <a href="https://cpb-us-w2.wpmucdn.com/campuspress.yale.edu/dist/6/3741/files/2022/12/MobileInternet.pdf" target="_blank">paper</a>
+    </div>
+    
+    <div class="abstract-text" id="wp1">
+   Expansion of 3G mobile internet in developing countries significantly increases employment, especially among women. While both men and women shift into service sector wage jobs, men move out of unpaid farm work into small agricultural enterprises, whereas women take on more unpaid roles and operate more small businesses. The results highlight a strong gendered dimension in how digital access reshapes labor markets.
+    </div>
+
+    <div class="media">
+      <a href="https://egc.yale.edu/news/230310/gendered-employment-effects-mobile-internet-access-developing-countries" target="_blank">Yale Economic Growth Center, </a>
+      <a href="https://www.promarket.org/2023/03/29/mobile-internet-is-changing-employment-in-developing-countries-but-not-always-as-expected/" target="_blank">Stigler Center (Chicago Booth)</a>
+      <a href="https://www.ideasforindia.in/topics/productivity-innovation/the-gendered-employment-effects-of-mobile-internet-access-in-developing-countries.html" target="_blank">Ideas for India</a>
+    </div>
+
+</div>
+
+
+
+
+
+
+</div>
+
+<footer class="footer">
+  &copy; Gaurav Chiplunkar 2025
+</footer>
+
 </body>
 </html>
